@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /* for Paragraphs */
+    --very-light-gray: hsl(0, 0%, 95%);/* for  (background, headings, buttons) */
+
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    color: var(--transparent-white);
+}
+
+/* Cards START */
+.card-container{
+    padding:50px;
+}
+
+.cards{
+    padding: 50px;
+}
+.card-1 {
+    background-color: var(--bright-orange) ; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-2 {
+    background-color: var(--dark-cyan) ;
+}
+.card-3 {
+    background-color: var(--very-dark-cyan) ;
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Cards END */
+/* Texts START */
+h1{
+    font-family: "Big Shoulders Display",sans-serif;
+    padding: 8px 0;
+    font-weight: 700;
+}
+
+p{
+    font-family: "Lexend Deca",sans-serif;
+    font-weight: 400;
+    line-height: 180%;
+    padding: 10px 0;
+
+
+}
+/* Texts END */
+/* Button START */
+button{
+    padding: 20px 40px;
+    border-radius:50px;
+    border:none;
+    background-color: var(--very-light-gray);
+    border: 1px solid  var(--very-light-gray);
+
+}
+
+button:hover{
+    background-color: transparent;
+}
+
+.card-1 button{
+    color: var(--bright-orange);
+    font-family: inherit;
+}
+.card-1 button:hover{
+    color: var(--very-light-gray);
+}
+.card-2 button{
+    color: var(--dark-cyan);
+    font-family: inherit;
+}
+.card-2 button:hover{
+    color: var(--very-light-gray);
+}
+.card-3 button{
+    color: var(--very-dark-cyan);
+    font-family: inherit;
+}
+.card-3 button:hover{
+    color: var(--very-light-gray);
+}
+/* Button END */
+
+/* ============DEKSTOP VIEW ============= */
+@media screen and (min-width:1024px){
+    .card-container{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        max-width: 200px;
+    }
+
+    .card-1{
+        border-top-left-radius:10px ;
+        border-top-right-radius:0 ;
+        border-bottom-left-radius:10px ;
+    }
+    .card-3{
+        border-top-right-radius:10px ;
+        border-bottom-left-radius:0 ;
+        border-bottom-right-radius:10px ;
+    }
+    
+
+}
